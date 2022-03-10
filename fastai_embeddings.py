@@ -34,7 +34,7 @@ class EntEmbedding():
     def cat_split(self, max_card=100):
 
         self.cont_names, self.cat_names = cont_cat_split(self.df, max_card = max_card, dep_var=self.target)
-        self.procs_nn = [Categorify, FillMissing, Normalize]z
+        self.procs_nn = [Categorify, FillMissing, Normalize]
 
         print(len(self.cont_names), "Continous Features:", self.cont_names, '\n', len(self.cat_names), "Categorical Features:", self.cat_names) 
     
